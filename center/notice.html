@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Bootstrap 101 Template</title>
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-theme.css" rel="stylesheet">
+<link href="../css/custom2.css" rel="stylesheet">
+<link href="../css/font-awesome.min.css" rel="stylesheet">
+<link href="../css/main.css" rel="stylesheet">
+
+<title>Urban by TEMPLATED</title>
+</head>
+
+</head>
+<body class="subpage">
+
+<header id="header">
+	<div class="logo"><a href="/index.jsp">Urban <span>by TEMPLATED</span></a></div>
+	<a href="#menu">Menu</a>
+</header>
+
+<!-- Nav -->
+<nav id="menu">
+	<ul class="links">
+			<li><a href="/index.html">홈으로</a></li>
+			<li><a href="../member/login.html">로그인</a><li>
+			<li><a href="../member/join.html">회원가입</a></li>
+			<li><a href="../center/notice.html">공개게시판</a></li>
+			<li><a href="../admin/list.html">관리자 메뉴</a></li>
+	</ul>
+</nav>
+
+
+
+<body class="subpage">
+
+	<div id="wrap">
+
+	<!-- Heading -->
+	<div id="heading"></div>
+	
+	<!-- Main -->
+	<section id="main" class="wrapper">
+	<div class="inner">
+	<div class="content">
+	<article>
+	<h1>공개 게시판</h1>
+	
+	<div class="table-wrapper">	
+	<table class="alt">
+		<tr>
+			<th>글번호</th>
+			<th>제목</th>
+			<th>작성자</th>
+			<th>작성일</th>
+			<th>조회수</th>
+		</tr>
+		<tr>
+			<td>999</td>
+			<td class="text-left board-title" onclick="location.href='reviewContent.html'">999번 글 입니다.</td>
+			<td>홍길동</td>
+			<td>2020.08.01</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>998</td>
+			<td class="text-left board-title">998번 글 입니다.</td>
+			<td>성춘향</td>
+			<td>2020.08.01</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>998</td>
+			<td class="text-left board-title">998번 글 입니다.</td>
+			<td>성춘향</td>
+			<td>2020.08.01</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>997</td>
+			<td class="text-left board-title">997번 글 입니다.</td>
+			<td>홍길동</td>
+			<td>2020.08.01</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>996</td>
+			<td class="text-left board-title">996번 글 입니다.</td>
+			<td>홍길동</td>
+			<td>2020.08.01</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>995</td>
+			<td class="text-left board-title">995번 글 입니다.</td>
+			<td>홍길동</td>
+			<td>2020.08.01</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>994</td>
+			<td class="text-left board-title">994번 글 입니다.</td>
+			<td>홍길동</td>
+			<td>2020.08.01</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>993</td>
+			<td class="text-left board-title">993번 글 입니다.</td>
+			<td>홍길동</td>
+			<td>2020.08.01</td>
+			<td>2</td>
+		</tr>
+	</table>
+	</div>
+	
+	<div id="table_search" >
+		<form action="notice.jsp" method="get" >
+		<select name="category" class="category">
+			<option value="content">글내용</option>
+			<option value="subject" >글제목</option>
+			<option value="name" >작성자</option>
+		</select>
+		<input type="text" name="search" value="검색창" class="searchbox"> 
+		<input type="submit" value="검색" class="button alt">
+		<input type="button" value="글쓰기" class="button" onclick="location.href='writeForm.jsp?pageNum=<%=pageNum %>'">
+		</form>
+	</div>
+	
+	</article>
+	</div>
+	</div>
+	</section>
+	</div>	
+	
+	<div class="clear"></div>
+	<div id="page_control" style="text-align:center;">
+		<ul class="pagination">
+					<li><a href="#">«</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">9</a></li>
+					<li><a href="#">10</a></li>
+					<li><a href="#">»</a></li>
+				</ul>
+	</div>
+
+	<!-- Scripts -->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery.scrolly.min.js"></script>
+	<script src="../js/jquery.scrollex.min.js"></script>
+	<script src="../js/skel.min.js"></script>
+	<script src="../js/util.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/jquery-3.5.1.js"></script>
+	<script src="../js/bootstrap.js"></script>
+
+</body>
+</html>

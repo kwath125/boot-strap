@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Bootstrap 101 Template</title>
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-theme.css" rel="stylesheet">
+<link href="../css/custom2.css" rel="stylesheet">
+<link href="../css/font-awesome.min.css" rel="stylesheet">
+<link href="../css/main.css" rel="stylesheet">
+
+<title>Urban by TEMPLATED</title>
+</head>
+
+</head>
+<body class="subpage">
+
+<header id="header">
+	<div class="logo"><a href="/index.jsp">Urban <span>by TEMPLATED</span></a></div>
+	<a href="#menu">Menu</a>
+</header>
+
+<!-- Nav -->
+<nav id="menu">
+	<ul class="links">
+			<li><a href="/index.html">홈으로</a></li>
+			<li><a href="../member/login.html">로그인</a><li>
+			<li><a href="../member/join.html">회원가입</a></li>
+			<li><a href="../center/notice.html">공개게시판</a></li>
+			<li><a href="../admin/list.html">관리자 메뉴</a></li>
+	</ul>
+</nav>
+
+
+
+<body class="subpage">
+
+<div class="container">
+	<div class="row">
+	
+	<div class="col-md-3" style="margin-top:75px;">
+		<div class="adtable-wrapper">
+			<table class="alt">
+				<div class="sub_menu_">
+    				<h3>관리 항목</h3>
+          			<tr><th> <a href="/admin/list.html">회원 관리</a></th></tr>
+           			<tr><th><a href="/admin/fileNoticeAdmin.html">파일 게시판(회원전용)관리</a></th></tr>
+            		<th> <a href="/admin/adminCharts.html">차트</a></th>
+    			</div>
+     		</table>
+    	</div>
+	</div>
+	
+	<div class="col-md-9 mt-sm-20" style="margin-top : 20px;">
+	<h1>전체 회원목록</h1>
+	<hr>
+	<form action="deleteController.jsp">
+	
+	<div class="table-wrapper">
+	<table class="alt">
+	<tr>
+		<th>아이디</th>
+		<th>비밀번호</th>
+		<th>이름</th>
+		<th>나이</th>
+		<th>성별</th>
+		<th>이메일</th>
+		<th>가입일자</th>
+		<th>삭제</th>
+	</tr>
+	<tr>
+		<td>admin</td>
+		<td>1234</td>
+		<td>홍길동</td>
+		<td>30</td>
+		<td>남</td>
+		<td>admin@admin.com</td>
+		<td>2020.08.10</td>
+		<td><input type="checkbox" name="userid" value="admin" /></td>
+	</tr>
+	<tr>
+		<td>aaa</td>
+		<td>1234</td>
+		<td>이몽룡</td>
+		<td>24</td>
+		<td>남</td>
+		<td>aaa@aaa.com</td>
+		<td>2020.08.10</td>
+		<td><input type="checkbox" name="userid" value="aaa" /></td>
+	</tr>
+	<tr>
+		<td>bbb</td>
+		<td>1234</td>
+		<td>성춘향</td>
+		<td>22</td>
+		<td>남</td>
+		<td>bbb@bbb.com</td>
+		<td>2020.08.10</td>
+		<td><input type="checkbox" name="userid" value="bbb" /></td>
+	</tr>		
+	</table>
+	</div><br>
+	<button type="button" class="genric-btn info-border circle" onclick="location.href='/index.jsp'">메인화면</button>
+	<button type="submit" class="genric-btn danger-border circle">삭제</button>
+	</form>
+	</div>
+	</div>
+	</div>
+	<div class="clear"></div>
+	<div id="page_control" style="text-align:center;">
+		<ul class="pagination">
+					<li><a href="#">«</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">»</a></li>
+				</ul>
+	</div>
+
+</body>
+<script>
+	function memberDeleteCheck() {
+		// 삭제 메세지
+		var result = confirm('삭제하시겠습니까?')
+		if(result == false){
+			return false;
+		}
+	}
+</script>
+
+	<!-- Scripts -->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery.scrolly.min.js"></script>
+	<script src="../js/jquery.scrollex.min.js"></script>
+	<script src="../js/skel.min.js"></script>
+	<script src="../js/util.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/jquery-3.5.1.js"></script>
+	<script src="../js/bootstrap.js"></script>
+
+</body>
+</html>
